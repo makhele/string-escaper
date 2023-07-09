@@ -1,7 +1,7 @@
 # String Escaper
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/your-repo?style=social)](https://github.com/your-username/your-repo/stargazers)
-[![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg)](https://www.buymeacoffee.com/your-username)
+[![GitHub stars](https://img.shields.io/github/stars/makhele/string-escaper?style=social)](https://github.com/your-username/your-repo/stargazers)
+[![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg)](https://www.buymeacoffee.com/makhelesabata)
 
 String Escaper is a web application that allows you to escape special characters in a string. It can be useful when working with HTML or other contexts where special characters need to be properly encoded.
 
