@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Escaper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    textarea {
+      width: 400px;
+      height: 150px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>String Escaper</h1>
+  <textarea id="input" placeholder="Enter a string"></textarea>
+  <button onclick="escapeString()">Escape</button>
+  <h2>Escaped String:</h2>
+  <textarea id="output" readonly></textarea>
+
+  <script>
+    function escapeString() {
+      const input = document.getElementById("input").value;
+      const escapedString = escapeHTML(input);
+      document.getElementById("output").value = escapedString;
+    }
+
+    function escapeHTML(html) {
+      const escapedHTML = html.replace(/[\u00A0-\u9999<>&](?!#)/gim, function(i) {
+        return '&#'+i.charCodeAt(0)+';';
+      });
+      const escapedNewlines = escapedHTML.replace(/\n/g, '\\n');
+      return escapedNewlines;
+    }
+  </script>
+</body>
+</html>
