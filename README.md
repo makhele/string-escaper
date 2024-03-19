@@ -21,7 +21,7 @@ Include some screenshots or GIFs showing the app in action.
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/makhele/your-repo.git`
 2. Open `index.html` in a web browser.
 
 ## Usage
