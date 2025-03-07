@@ -32,7 +32,7 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
-flex-direction: column;
+      flex-direction: column;
     }
 
     textarea {
@@ -97,19 +97,37 @@ flex-direction: column;
       font-weight: bold;
       margin-top: 10px;
     }
+
+    .badge-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .badge-container img {
+      margin: 0 5px;
+    }
   </style>
 </head>
 <body>
+  <div class="badge-container">
+    <a href="https://github.com/makhele/string-escaper">
+      <img src="https://img.shields.io/github/stars/makhele/string-escaper?style=social" alt="GitHub Repo stars">
+    </a>
+    <a href="https://www.buymeacoffee.com/makhelesabata" target="_blank">
+      <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-donate-yellow" alt="Buy Me a Coffee">
+    </a>
+  </div>
   <div class="container">
     <h1>String Escaper</h1>
     <div class="input-container">
       <textarea id="input" placeholder="Enter a string" aria-label="Input Textarea"></textarea>
-     <div class="button-group">
-    <button onclick="escapeString()">Escape</button>
- <button onclick="clearInput()" class="clear-button" title="Clear input" aria-label="Clear Input">
-        <img src="https://cdn-icons-png.flaticon.com/512/1632/1632602.png" alt="Clear Icon" width="20" height="20">
-      </button>
-</div>
+      <div class="button-group">
+        <button onclick="escapeString()">Escape</button>
+        <button onclick="clearInput()" class="clear-button" title="Clear input" aria-label="Clear Input">
+          <img src="https://cdn-icons-png.flaticon.com/512/1632/1632602.png" alt="Clear Icon" width="20" height="20">
+        </button>
+      </div>
     </div>
 
     <div class="output-container">
